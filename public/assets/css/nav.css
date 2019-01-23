@@ -1,0 +1,631 @@
+
+section,header{
+	display:block;
+	
+}
+header a{
+	text-decoration: none;
+	font-family: Arial;
+}
+header{
+
+		text-align:left;
+	/*padding-left: 30px;*/
+	min-height: 5px;
+	background: rgba(40, 41, 60,0.95);
+
+}
+header figure img{
+  width: 250px;
+  position: relative;
+ margin-left: -15px;
+ margin-top: -8px;
+ z-index: 10;
+
+}
+.login-status{
+  display: none;
+  position: relative;
+  width: 300px;
+  padding:20px 10px;
+  height: auto;
+  color:rgba(68, 68, 68,1);
+  border-left: 4px solid rgba(70, 180, 80,1);
+  background: rgba(255, 255, 255,1);
+
+}
+footer{
+	min-height:50px; 
+	box-sizing: border-box;
+	background-color: rgba(41, 42, 61,1);
+  clear: both;
+
+}
+
+footer a{
+	
+	margin: 0 auto;
+	text-decoration: none;
+	color:rgba(230, 230, 230,1);
+	display: block;
+	padding: 8px 16px;
+  padding-left: 180px;
+	/*font-size:18px;*/
+	/*font-weight: bold; */
+	transition: all 0.4s ease;
+  text-align: left;
+	
+}
+footer a:hover{
+	color: white;
+	text-decoration: underline;
+}
+
+
+footer{
+
+	text-align: center;
+	color: rgba(240, 240, 171,1);
+	padding: 15px
+
+}
+
+h3{
+	color:rgba(255,250,255,1);
+	font-family:Arial;
+
+}
+
+a {
+	color: rgba(0, 120, 215,1);
+}
+a:hover{
+	color: rgba(200, 0, 5,1);
+}
+
+
+div#branding{
+	padding:0 15px;
+}
+
+/*Normal Icon-bar and Navigation bar*/
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: all 0.6s ease;
+}
+/*.sticky + #content {
+  padding-top: 360px;
+  transition: padding-top 0.6s ease;
+
+}*/
+
+/*primary Navigation*/
+.icon-bar {
+    width: 100%;
+    
+    overflow: hidden;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(40, 41, 60,0.95);
+
+}
+.icon-bar-wrapper{
+  float: right;
+  
+ 
+}
+.icon-bar a{
+    float: left;
+    text-align: center;
+    padding: 12px 20px;
+    transition: all 0.3s ease;
+    color: #efefef;
+    font-size: 16px;
+    text-shadow: 1px 1px 3px black;
+
+
+}
+.icon-bar a::before{
+/*content: "♥";*/
+}
+
+.icon-bar a:hover {
+    background-color: rgba(0, 105, 155,1);
+}
+
+#icon-bar a.active {
+    /*background-color: rgba(220, 0, 0,1) !important;*/
+    transition: all 0.3s ease;
+    
+    
+
+}
+a.icon{
+	display: none;
+	color: rgb(144, 219, 255);
+
+}
+@media screen and (max-width: 750px) {
+	#icon-bar a.active{
+		display: block;
+	}
+	#icon-bar a:not(.icon){
+		
+		color:rgba(255, 108, 0,1);
+		padding-left: 40px;
+	}
+	#icon-bar a/*:not(:first-child)*/,div.dropdown{
+		display: none;
+		
+
+	}
+	
+
+#icon-bar a.icon{
+	display: block;
+	float: right !important;
+
+}
+#icon-bar a.active {
+    /*background-color: rgba(220, 7, 7,.8) !important;*/
+    transition: all 0.2s ease;
+    
+
+}
+}
+
+
+
+@media screen and (max-width: 750px){
+	
+  #icon-bar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+
+}
+	#icon-bar.responsive a{
+		display: block;
+		float: none;
+		text-align: left;
+		
+
+	}
+	#icon-bar.responsive>a{
+		color: #fff;
+	}
+#icon-bar{
+	
+
+}
+
+}
+
+
+
+/* This section of the CSS contains and manipulates the Slideshow container */
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  margin-top: 0;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  
+ 
+}
+
+/* Caption text */
+.text {
+  color: rgb(229, 243, 255,.9);
+  font-family: Tahoma;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 20%;
+  right: 0;
+  width: 70%;
+  min-height: 100px;
+  z-index: 10;
+  text-align: left;
+  padding-bottom: 30px; 
+  background-color: rgba(0,0,0,.6);
+   transition: all .6s ease-in;
+background: rgba(0,0,0,0.21);
+background: -moz-linear-gradient(left, rgba(0,0,0,0.21) 27%, rgba(0,0,0,0.21) 39%, rgba(0,0,0,0.21) 40%, rgba(0,0,0,0.21) 44%, rgba(0,0,0,0.21) 46%, rgba(0,0,0,0.44) 63%, rgba(0,0,0,0.59) 74%, rgba(0,0,0,0.82) 91%, rgba(0,0,0,0.94) 100%);
+background: -webkit-gradient(left top, right top, color-stop(27%, rgba(0,0,0,0.21)), color-stop(39%, rgba(0,0,0,0.21)), color-stop(40%, rgba(0,0,0,0.21)), color-stop(44%, rgba(0,0,0,0.21)), color-stop(46%, rgba(0,0,0,0.21)), color-stop(63%, rgba(0,0,0,0.44)), color-stop(74%, rgba(0,0,0,0.59)), color-stop(91%, rgba(0,0,0,0.82)), color-stop(100%, rgba(0,0,0,0.94)));
+background: -webkit-linear-gradient(left, rgba(0,0,0,0.21) 27%, rgba(0,0,0,0.21) 39%, rgba(0,0,0,0.21) 40%, rgba(0,0,0,0.21) 44%, rgba(0,0,0,0.21) 46%, rgba(0,0,0,0.44) 63%, rgba(0,0,0,0.59) 74%, rgba(0,0,0,0.82) 91%, rgba(0,0,0,0.94) 100%);
+background: -o-linear-gradient(left, rgba(0,0,0,0.21) 27%, rgba(0,0,0,0.21) 39%, rgba(0,0,0,0.21) 40%, rgba(0,0,0,0.21) 44%, rgba(0,0,0,0.21) 46%, rgba(0,0,0,0.44) 63%, rgba(0,0,0,0.59) 74%, rgba(0,0,0,0.82) 91%, rgba(0,0,0,0.94) 100%);
+background: -ms-linear-gradient(left, rgba(0,0,0,0.21) 27%, rgba(0,0,0,0.21) 39%, rgba(0,0,0,0.21) 40%, rgba(0,0,0,0.21) 44%, rgba(0,0,0,0.21) 46%, rgba(0,0,0,0.44) 63%, rgba(0,0,0,0.59) 74%, rgba(0,0,0,0.82) 91%, rgba(0,0,0,0.94) 100%);
+background: linear-gradient(to right, rgba(0,0,0,0.21) 27%, rgba(0,0,0,0.21) 39%, rgba(0,0,0,0.21) 40%, rgba(0,0,0,0.21) 44%, rgba(0,0,0,0.21) 46%, rgba(0,0,0,0.44) 63%, rgba(0,0,0,0.59) 74%, rgba(0,0,0,0.82) 91%, rgba(0,0,0,0.94) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 );
+
+
+line-height: 1.5;
+text-shadow: 1px 1px 2px black;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 99.8%;
+  background-color: rgba(0,0,0,.2);
+  z-index: 1;
+  transition: all .6s ease-in;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: /*#bbb*/rgba(240,250,250,1);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+ span.active /*{
+  background-color: #717171;
+}*/
+,.dot:hover{
+  background-color:rgba(224,0,0,1);
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s; 
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .0} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .0} 
+  to {opacity: 1}
+}
+@media screen and (max-width: 700px){
+	.text{
+		font-size: 15px;
+		padding-bottom: 10px; 
+	}
+	.numbertext {
+		font-size: 15px;
+		padding: 10px;
+	}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+@keyframes shake {
+ /* 0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }*/
+
+   0% { transform: translate(10px, 0px) rotate(0deg); }
+  10% { transform: translate(20px, 0px) rotate(0deg); }
+  20% { transform: translate(30px, 0px) rotate(0deg); }
+  30% { transform: translate(40px, 2px) rotate(0deg); }
+  40% { transform: translate(50px, 0px) rotate(0deg); }
+  50% { transform: translate(-50px, 0px) rotate(0deg); }
+  60% { transform: translate(-40px, 0px) rotate(0deg); }
+  70% { transform: translate(30px, 0px) rotate(0deg); }
+  80% { transform: translate(20px, 0px) rotate(0deg); }
+  90% { transform: translate(10px, 0px) rotate(0deg); }
+  100% { transform: translate(0px, 0px) rotate(0deg); }
+
+}
+#goUpButton {
+  display: none;
+  position: fixed;
+  bottom: 200px;
+  right: 5px;
+  width: 50px;
+  height: 50px
+  right: 20px;
+  z-index: 99;
+  
+  color: #207ce5;
+  cursor: pointer;
+ 
+  
+  border-radius: 50%;
+}
+
+#goUpButton:hover {
+  background-color: rgba(110,110,110,.1);
+}
+
+
+/*This section of the CSS controls team_card.inc*/
+section>h1{
+	color: rgba(10,11,10,1);
+	/*margin: 20px auto;*/
+	width: 20%;
+	text-align: center;
+	border-bottom: 4px solid rgba(240, 15, 132,1);
+	border-bottom-width: thick;
+	font-family: verdana;
+	font-size: 28px;
+}
+.row{
+
+box-sizing: border-box;
+
+
+}
+/*.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}*/
+.row .column h2{
+	text-align: center;
+	color: rgba(20,10,10,1);
+
+}
+.row p.title{
+	text-align: center;
+}
+.row{
+	/*margin-top: 10px;*/
+}
+.column {
+  float: none;
+  width: 100%;
+  /*margin-bottom: 16px;*/
+  padding: 0 5px;
+ /* background-color: rgba(255, 255, 255,1);*/
+ 
+}
+@media screen and (max-width: 900px) {
+
+.column {
+    width: 50%;
+    display: block;
+  }
+section h1{
+width: 90%;
+}
+
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+}
+
+
+
+} 
+
+main#pond-page-wrapper{
+  float: left;
+  box-sizing: border-box;
+  width: 100%;
+}
+main#pond-page-wrapper::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+main#pond-page-wrapper section#admin{
+  width: 20% !important;
+  padding-top: 20px;
+  float: left;
+  background-color: rgba(41, 42, 61,1);
+}
+
+a.active{
+ border-bottom: 1px solid rgba(0, 120, 215,.13) !important;
+}
+main#pond-page-wrapper #admin #admin-menu a{
+  display: block;
+  text-decoration: none;
+  padding: 5px 20px;
+  color: rgba(229, 243, 255,1);
+  border-bottom: 1px solid rgba(0, 120, 215,.13);
+  font-family:Tahoma;
+  
+  text-shadow: 1px 1px 2px black;
+  transition: all 0.3s ease-in;
+}
+
+main#pond-page-wrapper #admin #admin-menu a:hover{
+  color: rgba(255, 255, 255,1);
+  background-color: rgba(14, 160, 205,.3);
+  transition: all 0.5s ease-in;
+}
+
+main#pond-page-wrapper #admin #admin-menu a.active{
+
+  cursor: default;
+   border-left: 4px solid rgba(14, 160, 205,1);
+   background-color: rgba(14, 160, 205,.2);
+}
+main#pond-page-wrapper #admin #admin-menu a.active::after{
+  content: "◄";
+  position: relative;
+  text-shadow: 0px 0px 0px white;
+  right: -25px;
+  float: right;
+  top: 5px;
+  font-size: 20px;
+
+
+}
+
+section#ponds{
+  width: 80%;
+  float: left;
+
+}
+.card img{
+	margin: auto;
+  width: 50%;
+  display: block;
+ 
+  margin-top: 20px;
+}
+
+.card {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  border:1px solid rgba(0, 0, 0, 0.1);
+  padding: 0 10px;
+
+}
+.card h2{
+	color: rgba(6, 161, 232,1) !important;
+}
+.card strong{
+  color: rgba(3, 169, 244,1);
+  line-height: 2.0;
+}
+
+@media screen and (max-width: 900px) {
+	.container h1{
+		width: 100% !important;
+	}
+
+.card img{
+  min-height: auto;
+  width: 100%;
+
+}
+
+.card {
+  
+}
+
+}
+
+/*Any Disabled Element*/
+
+input.disabled{
+	cursor: not-allowed !important;
+	background-color: #ccc !important;
+}
+span.logo{
+	font-size: 30px;
+	font-family: Arial;
+
+	transition: all 0.7s ease;
+}
+@media screen and (max-width: 800px){
+	span.logo{
+	font-size: 20px;
+	transition: all 0.7s ease;
+}
+}
+
+
+.success,.failure{
+ ;
+ padding: 10px 20px;
+ width: 90%;
+ margin-left:auto;
+ margin-right: auto;
+margin-top: 100px
+ 
+
+}
+.success{
+  color: rgba(40,200,40,1);
+   background-color: rgba(29, 163, 98,.1);
+}
+.failure{
+ background-color: rgba(178, 84, 26,.1);
+  color: rgba(200,40,40,1);
+}
+
+table {
+  margin-top: 40px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    color:rgba(131, 137, 146,1);
+}
+
+th, td {
+    text-align: left;
+    padding: 25px;
+    font-family: bold;
+
+
+}
+th{
+  color:rgba(2, 167, 242,1);;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+table button{
+outline: none;
+  border:0;
+  color: #f1f1f1;
+  background: rgba(73,155,234,1);
+background: -moz-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(50,138,231,0.93) 55%, rgba(32,124,229,0.93) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(73,155,234,1)), color-stop(55%, rgba(50,138,231,0.93)), color-stop(100%, rgba(32,124,229,0.93)));
+background: -webkit-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(50,138,231,0.93) 55%, rgba(32,124,229,0.93) 100%);
+background: -o-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(50,138,231,0.93) 55%, rgba(32,124,229,0.93) 100%);
+background: -ms-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(50,138,231,0.93) 55%, rgba(32,124,229,0.93) 100%);
+background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(50,138,231,0.93) 55%, rgba(32,124,229,0.93) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5', GradientType=1 );
+cursor: pointer;
+padding:5px 10px;
+}
+table button:hover{
+  opacity: .8;
+}

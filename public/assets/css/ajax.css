@@ -1,0 +1,190 @@
+.modal-overlay {     
+	position: fixed;     
+	top: 0;     
+	left: 0;     
+	bottom: 0;     
+	width: 100%;     
+	height: 100%;     
+	background-color: rgba(0,0,0,.6);     
+	z-index: 25; 
+} 
+ 
+.modal-window {     
+	position: absolute;     
+	top: 50%;     
+	left: 11%;     
+	width: 75%;     
+	min-height: 500px;     
+	/*margin-left: -150px;    */ 
+	/*padding: 20px;  */   
+	border: 1px solid rgba(0,0,0,.8);     
+	background-color: #FFF;     
+	/*-moz-border-radius: 6px;     
+	-webkit-border-radius: 6px;     
+	border-radius: 6px;     */
+	-moz-box-shadow: 0 0 14px #123;     
+	-webkit-box-shadow: 0 0 14px #123;     
+	box-shadow: 0 0 14px #123;     
+	z-index: 35; 
+} 
+ @media screen and (max-width: 800px){
+ 	.modal-window{
+ 		left: 2%; 
+ 		width: 96%;
+ 	}
+ }
+.modal-close-btn {     
+	position: relative;     
+	top: -20px;     
+	right: -20px;  
+	float: right;  
+	margin: 0;     
+	padding: 0px 10px; 
+	padding-bottom: 3px;
+
+	text-decoration: none;     
+	color: black;     
+	font-size: 25px; 
+} 
+ .modal-close-btn:hover{
+ 	background-color: rgba(200,10,10,1);
+ 	color: rgba(255, 255, 255,1);
+ }
+.modal-close-btn:before {     
+	position: relative;     
+	top: -1px;     
+	content: "";     
+	text-transform: uppercase;     
+	font-size: 10px; 
+} 
+.modal-window h2{
+	margin-top: 50px;
+	text-align: center;
+}
+
+
+/*The Following CSS code Embellishes  Drop button edit and create buttons*/
+/* The Modal (background) */
+.modal-bottom {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-bottom-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 60%;
+    left: 30%;
+    min-height: 400px;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+.modal-bottom-content strong{
+	color: rgba(178, 84, 26,1);
+}
+
+.slideOut{
+	position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 60%;
+    left: 20%;
+    min-height: 300px;
+    -webkit-animation-name: slideOut;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideOut;
+    animation-duration: 0.4s
+}
+/* The Close Button */
+.close-bottom {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-bottom:hover{
+	color: grey;
+    text-decoration: none;
+    cursor: pointer;
+}
+.close-bottom:focus {
+    color: #a00;
+}
+
+.modal-bottom-header {
+    padding: 10px 16px;
+    background-color: rgba(33, 78, 104,1);
+    color: white;
+}
+
+.modal-bottom-body {
+	padding: 16px 16px;
+}
+
+.modal-bottom-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+input[type=submit]{
+    border:none;
+    outline: 0;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: rgba(229, 140, 12,1);
+}
+input[type=submit]:hover{
+    opacity: .8;
+}
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+@-webkit-keyframes slideOut {
+    from {bottom: 0px; opacity: 1} 
+    to {bottom: -300px; opacity: 0}
+}
+
+@keyframes slideOut {
+    from {bottom: 0px; opacity: 1}
+    to {bottom: -300px; opacity: 0}
+}
+@-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+div.column{
+    margin-top: 20px;
+    width: 99%;
+    margin-right: auto;
+    margin-left: auto;
+    transition: all 0.3s ease-in;
+}
