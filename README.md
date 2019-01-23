@@ -17,6 +17,8 @@ This a simple fish farm management web application
 * PHP
 * MySQL
 
+# Author  
+## Umah Chukwudi Williams  
 
 Screenshots
 
